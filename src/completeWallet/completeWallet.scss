@@ -1,0 +1,24 @@
+@use '../sass/' as *;
+.complete_container {
+    @include flex_center(center, center);
+    flex-direction: column;
+}
+
+.complete_content {
+    @include flex_center(start, center);
+    flex-direction: column;
+
+    h2 {
+        color: $blue_color;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    p {
+        margin: 1rem 0px;
+    }
+
+    textarea {
+        margin-bottom: 2rem;
+        width: 100%;
+    }
+}

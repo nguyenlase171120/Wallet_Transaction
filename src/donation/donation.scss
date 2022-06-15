@@ -1,0 +1,76 @@
+@use '../sass/' as *;
+
+.donate__container {
+    @include flex_center(center, center);
+    flex-direction: column;
+
+    .donate-title {
+        h2 {
+            text-transform: uppercase;
+            color: $blue-color;
+            font-size: large;
+        }
+    }
+}
+
+.donate-content {
+    @include flex_center(center, center);
+    flex-direction: column;
+}
+
+.donate-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    button {
+        cursor: pointer;
+        padding: 0.5rem 2.5rem;
+        border: 1px solid black;
+        margin: 10px;
+        background-color: white;
+        color: $blue-color;
+        transition: all 0.3s ease-in-out;
+
+        &:focus {
+            background-color: $yellow-color;
+        }
+    }
+}
+
+.donate-types {
+    @include flex_center(center, center);
+    flex-direction: column;
+    margin: 1rem 0px;
+
+    .donate__types-amount {
+        @include flex_center(center, center);
+        margin: 10px 0px;
+
+        .btn-item {
+            padding: 1rem 3rem;
+            margin-right: 1rem;
+            border-radius: 10px;
+            border: 1px solid black;
+            outline: none;
+            background-color: $white-color;
+            cursor: pointer;
+            color: $blue-color;
+            font-weight: 500;
+        }
+    }
+}
+
+.without-donation {
+    color: $blue-color;
+    text-align: center;
+    margin-top: 1rem;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: small;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

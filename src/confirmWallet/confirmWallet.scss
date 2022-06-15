@@ -1,0 +1,36 @@
+@use '../sass/' as *;
+.confirm__container {
+    @include flex_center(center, start);
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 300px;
+}
+
+.confirm-event {
+    @include flex_center(center, center);
+    flex-direction: column;
+}
+
+.confirm-code {
+    padding: 12px 24px;
+    background-color: #d1d1d1;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.wallet-change {
+    color: $blue-color;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    margin: 2rem 0px;
+    font-size: small;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

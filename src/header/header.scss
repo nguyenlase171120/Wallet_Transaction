@@ -1,0 +1,34 @@
+@use "../sass/" as *;
+
+.header__container {
+    background-color: $white-color;
+    padding: 0.5rem 1rem;
+    color: $blue-color;
+    text-transform: uppercase;
+    height: 6rem;
+    @include flex_center(center,space-between);
+
+
+    h2 {
+        font-size: x-large;
+        letter-spacing: 4px;
+    }
+}
+
+.header-btn {
+    background-color: $yellow-color;
+    border-radius: 1rem;
+    padding: 4px 1rem;
+    border: none;
+    outline: none;
+    color: $blue-color;
+    cursor: pointer;
+    text-align: center;
+    
+    p{
+        letter-spacing: 4px;
+        font-weight: 900;
+        text-transform: uppercase;
+
+    }
+}

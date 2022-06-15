@@ -1,26 +1,33 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
+import ListImages from './container/ListImages';
+import Header from './header/Header';
+import Introduce from './introduce/Introduce';
+import '@stripe/stripe-js';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Success from './stateStripe/Success';
+import Cancel from './stateStripe/Cancel';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => {
+    return (
+        <div>
+            <header>
+                <Header />
+            </header>
+
+            <section>
+                <Introduce />
+
+                <ListImages />
+            </section>
+
+            <BrowserRouter>
+                <Routes>
+                    <Route path='/success' element={<Success />} />
+                    <Route path='/cancel' element={<Cancel />} />
+                </Routes>
+            </BrowserRouter>
+        </div>
+    );
+};
 
 export default App;

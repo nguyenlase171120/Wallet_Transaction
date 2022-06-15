@@ -1,0 +1,22 @@
+@use '../sass/' as *;
+
+.detail__container {
+    width: 100%;
+    @include flex_center(center, center);
+    img {
+        width: 70%;
+        // margin-right: 10rem;
+        cursor: pointer;
+    }
+}
+
+.detail-content {
+    @include flex_center(start, center);
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.detail-button {
+    @include flex_center(center, center);
+}

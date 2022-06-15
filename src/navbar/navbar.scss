@@ -1,0 +1,26 @@
+@use "..//sass/" as *;
+
+
+.navbar__container {
+    @include flex_center(center,center);
+}
+
+.navbar__menu {
+    @include flex_center(center,center);
+    list-style-type: none;
+    font-weight: 600;
+    gap: 2rem;
+    cursor: pointer;
+    margin-right: 1rem;
+}
+
+.navbar__social {
+    @include flex_center(center,center);
+    font-size: larger;
+    margin-left: 1rem;
+
+    .social-item {
+        margin: 0 1rem;
+    }
+
+}

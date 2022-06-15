@@ -1,0 +1,22 @@
+@use "../../sass/" as *;
+.btn-event {
+    background-color: black;
+    color: $white-color;
+    font-weight: bold;
+    padding: 4px 8px;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    cursor: pointer;
+    border-radius: 10px;
+    letter-spacing: 2px;
+    transition: all 0.3s ease-in-out;
+    font-size: x-small;
+    margin-right: 10px;
+
+    &:hover {
+        scale: 1.1;
+        box-shadow: "0px 0px 8px rgb(0,0,0)";
+        background-color: #34B3F1;
+    }
+}

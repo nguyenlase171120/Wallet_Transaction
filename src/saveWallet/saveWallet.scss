@@ -1,0 +1,42 @@
+@use '../sass/' as *;
+
+.save__container {
+    @include flex_center(start, center);
+    flex-direction: column;
+
+    .save-desc {
+        @include flex_center(start, center);
+        flex-direction: column;
+        margin-bottom: 1rem;
+        h3 {
+            color: $blue_color;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin: 10px 0px;
+        }
+    }
+}
+
+.save__generator {
+    margin: 10px 0px;
+    background-color: #d1d1d1;
+    padding: 10px;
+    @include flex_center(center, center);
+    flex-wrap: wrap;
+    p {
+        margin: 0px 10px;
+    }
+}
+
+.save-confirm {
+    @include flex_center(center, center);
+    flex-direction: column;
+    .save-privacy {
+        margin: 10px 0px;
+        text-align: center;
+    }
+}

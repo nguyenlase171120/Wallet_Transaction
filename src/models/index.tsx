@@ -1,0 +1,1 @@
+import { ImageProps } from './imageType';
